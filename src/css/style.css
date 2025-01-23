@@ -18,7 +18,7 @@ body {
     font-size: 1.2em;
     background-color: #1D1616;
     color: #EEEEEE;
-    line-height: 1.2em;
+    line-height: 1.4em;
     border: 3px solid white;
 }
 
@@ -67,6 +67,11 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 5%;
+}
+
+main > p {
+    margin: 1% 0;
 }
 p {
     max-width: 60ch;
@@ -78,4 +83,6 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 0;
+    padding: 2%;
 }
