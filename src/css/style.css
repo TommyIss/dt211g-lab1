@@ -104,9 +104,19 @@ footer {
         font-size: 1em;
     }
 
+    /* Main element */
+    h2, ul {
+        margin: 0 7%;
+    }
+    ul {
+        padding: 0 2%;
+    }
+    main > p {
+        margin: 1% 7%;
+    }
     /* Navigeringsmeny */
     #nav-menu {
-        display: block;
+        display: none;
         width: 100%;
     }
     .nav-list {
@@ -119,6 +129,7 @@ footer {
         position: absolute;
         top: 0;
         right: 0;
+        padding-top: 10%;
     }
     .nav-list > li > a {
         padding: 1em 0;
@@ -157,14 +168,22 @@ footer {
         margin: 1%;
     }
 
+    /* Stängknapp */
+    .close {
+        padding: 0.2em;
+        z-index: 3;
+        margin: 1%;
+    }
     .cross1 {
         width: 25px;
         transform: rotate(45deg);
+        position: relative;
         top: 5px;
     }
     .cross2 {
         width: 25px;
         transform: rotate(135deg);
-        top: 5px;
+        position: relative;
+        top: -3px;
     }
 }
