@@ -94,8 +94,7 @@ p {
 .pictures {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 1%;
-    background-color: #D84040;
+    background-color: #EEEEEE;
     padding: 1%;
     align-items: center;
 }
