@@ -56,15 +56,25 @@ header {
     margin: 0;
 }
 
-.nav-list > li > a {
+.nav-links {
     text-decoration: none;
     color: #EEEEEE;
     padding: 1.4em 1em;
     white-space: nowrap;
 }
 
-.nav-list > li > a:hover {
+.nav-links:hover {
     background-color: aqua;
+    color: #D84040;
+}
+
+/* Markera aktuella sidan  */
+#actual-side {
+    color: aqua;
+    text-decoration: underline;
+}
+#actual-side:hover {
+    color: #D84040;
 }
 
 /* Main */
