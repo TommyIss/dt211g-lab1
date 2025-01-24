@@ -18,7 +18,7 @@ body {
     font-size: 1.2em;
     background-color: #1D1616;
     color: #EEEEEE;
-    line-height: 1.4em;
+    line-height: 1.5em;
     border: 3px solid white;
 }
 
@@ -73,7 +73,7 @@ main {
     padding: 5%;
 }
 
-h2, ul {
+h2, h3, ul {
     margin: 0 20%;
 }
 ul {
@@ -147,7 +147,7 @@ footer {
     }
 
     /* Main element */
-    h2, ul {
+    h2, h3, ul {
         margin: 0 7%;
     }
     ul {

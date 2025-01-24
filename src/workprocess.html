@@ -42,38 +42,91 @@
     <!-- Main -->
     <main>
         <h2>
-            Om uppgiften
+            Arbetsprocess
         </h2>
+
+        <h3>
+            Skapa Projektmapp och Initiera npm
+        </h3>
         <p>
-            Uppgiften handlar om att prova NodeJS och ta reda på hur den kan användas för att underlätta utveckling av en webbplats.
+            Först skapade jag en ny mapp på min lokala dator för projektet. I den nya mappen öppnade jag terminalen och körde kommandot ”npm init”. Detta genererade en ”package.json”-fil i mappen, som innehåller metadata om projektet och hanterar dess beroenden. Därefter tog jag bort fälten "main" och "scripts" från ”package.json”-filen
         </p>
 
+        <h3>
+            Parcel installation
+        </h3>
         <p>
-            Uppgiften syftar till att kunna automatisera vissa uppgifter med några verktyg i NodeJS, och skapa en automatiserad utvecklingsmiljö baserad på Git och NodeJS, vilket möjliggör automatisk publicering vid uppdatering av webbplatsen.
+            För att installera Parcel, som är ett utvecklingsverktyg för att bunta och optimera webbapplikationer, körde jag kommandot ”npm install parcel --save-dev”, som skapade en ”node_modules”-mapp som innehåller alla nödvändiga beroenden.
         </p>
 
+        <h3>
+            Uppdatera package.json
+        </h3>
         <p>
-            I uppgiften skall en demowebbplats skapas med HTML, CSS och JavaScript. Webbplatsen skall vara responsiv och funkar optimalt oberoende av eneheten. Webbplatsen skall innehålla minst tre undersidor:
-            <ul>
-                <li>
-                    Startsida med info om uppgiften
-                </li>
-                <li>
-                    Undersida för bilder
-                </li>
-                <li>
-                    Undersida för publicering med arbetsprocess-beskrivning
-                </li>
-            </ul>
+            I ”package.json”-filen lade jag till följande konfiguration (“source”: “src/index.html”, "scripts": {"start": "parcel", "build": "parcel build"}), för att definiera startsidan och skripten för att starta och bygga projektet. Jag skapade sedan en ”src”-mapp och placerade mina HTML-filer, och i mappen skapades egna undermappar för respektive CSS- samt JavaScript-fil.
         </p>
+
+        <h3>
+            Starta Lokal Liveserver
+        </h3>
         <p>
-            Uppgifter som skall automatiseras är:
-            <ul>
-                <li>Minifiering av CSS.</li>
-                <li>Transpilering och minifiering av JavaScript.</li>
-                <li>Minifiering av HTML.</li>
-                <li>Optimering av bilder.</li>
-            </ul>
+            För att starta en lokal utvecklingsserver körde jag kommandot: ”npm run start”
+            Detta startade en lokal liveserver som övervakar filändringar och automatiskt laddar om sidan i webbläsaren.            
+        </p>
+        <h3>
+            Skapa .gitignore-fil
+        </h3>
+        <p>
+            Jag skapade en ”.gitignore”-fil för att exkludera onödiga filer och mappar från versionshantering med Git, är ”node_modules”, ”dist”, ”.parcel-cache”, och ”package-lock.json”.
+        </p>
+
+        <h3>
+            Versionshantering med Git och GitHub
+        </h3>
+        <p>
+            Jag initierade ett nytt Git remote-repository via Visual Studio Code. För att hantera utvecklingsflödet skapade jag en ny branch som heter ”development” och började skriva regelbundna commits för alla ändringar jag gjorde.
+        </p>
+
+        <h3>
+            Struktur och Layout
+        </h3>
+        <p>
+            Jag skapade en logisk struktur för webbplatsen och använde semantiska HTML-element såsom ”header”, ”main” och ”footer”. En navigeringsmeny skapades för att underlätta användarnas navigering på webbplatsen. Jag designade layouten för att vara responsiv och användarvänlig.
+        </p>
+
+        <h3>
+            Undersida för Bilder
+        </h3>
+        <p>
+            Jag skapade en undersida ”pictures.html” där jag inkluderade minst fem av mina egna fotografier. Bilderna, som var i JPG-format, placerades i picture-element för att automatiskt kunna bli optimerade till moderna bildformat som AVIF och WEBP.
+        </p>
+
+        <h3>
+            Dokumentering av Arbetsprocess
+        </h3>
+        <p>
+            Denna undersida skapades där jag dokumenterade hela arbetsprocessen, från planering till implementering och publicering. Detta inkluderar verktyg och tekniker jag använde.
+        </p>
+
+        <h3>
+            Sammanfoga Brancher
+        </h3>
+        <p>
+            När utvecklingen var klar sammanfogade jag ”development”-branchen med ”main”-branchen för att integrera alla ändringar.
+        </p>
+
+        <h3>
+            Bygga för Produktion
+        </h3>
+        <p>
+            Genom att köra kommandot:”npm run build” transpilerade jag modern JavaScript till en version som är kompatibel med äldre webbläsare. Koden minifierades för att minska filstorleken och förbättra laddningstiderna.
+        </p>
+
+        <h3>
+            Publicering
+        </h3>
+        <p>
+            Jag publicerade projektet på Netlify genom att importera repository från GitHub. Netlify hanterade distributionen och gjorde webbplatsen tillgänglig online.
         </p>
     </main>
     <!-- Footer -->
